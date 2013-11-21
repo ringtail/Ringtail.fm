@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>Ringtail.FM</title>
+
+    <!-- WinJS 引用 -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Ringtail.FM 引用 -->
+    <link rel="stylesheet" href="css/mspeakker.css">
+    <link rel="stylesheet" href="css/cassette.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/coverflow/contentflow.css">
+    <link href="/css/default.css" rel="stylesheet" />
+    <!--    <script type="text/javascript" src="js/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/win8-jquery.js"></script>
+
+    <script type="text/javascript" src="js/coverflow/contentflow_src.js"></script>
+    <script type="text/javascript" src="js/temp.js"></script>
+    <!--    <script type="text/javascript" src="js/projekktor.min.js"></script>-->
+    <script type="text/javascript" src="js/speakker.min.js"></script>
+    <!-- <script type="text/javascript" src="js/index.js"></script>-->
+    <script type="text/javascript" src="js/jquery-css-transform/jquery-css-transform.js"></script>
+    <script type="text/javascript" src="js/rotate3Di.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body role="application">
+    <div id="cassette">
+        <div id="wheel_left" class="wheel"></div>
+        <div id="wheel_right" class="wheel"></div>
+        <div id="cassette_appearance">
+        </div>
+    </div>
+
+    <div id="warning">
+    </div>
+    <div class="maincontent" id="channel_menu">
+        <div id="contentFlow" class="ContentFlow">
+
+            <div class="loadIndicator">
+                <div class="indicator"></div>
+            </div>
+
+            <div class="flow">
+
+                <div class="item">
+                    <img class="content" src="pics/huayu.png" />
+                    <div class="caption">华语频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/riyu.jpg" />
+                    <div class="caption">日语频道</div>
+                </div>
+                <div class="item">
+
+                    <img class="content" src="pics/psy.png" />
+                    <div class="caption">韩语频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/france.png" />
+                    <div class="caption">法语频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/european.png" />
+                    <div class="caption">欧美频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/70.png" />
+                    <div class="caption">70年代频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/80.png" />
+                    <div class="caption">80年代频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/90.png" />
+                    <div class="caption">90年代频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/pic4.png" />
+                    <div class="caption">粤韵频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/minyao.png" />
+                    <div class="caption">民谣频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/qingyinyue.png" />
+                    <div class="caption">轻音乐频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/yuansheng.png" />
+                    <div class="caption">电影原声频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/jazz.png" />
+                    <div class="caption">爵士频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/dianzi.png" />
+                    <div class="caption">电子乐频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/shuochang.png" />
+                    <div class="caption">说唱频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/r&b.png" />
+                    <div class="caption">R&amp;B频道</div>
+                </div>
+
+                <div class="item">
+                    <img class="content" src="pics/rock_blue.png" />
+                    <div class="caption">白 频道</div>
+                </div>
+                <div class="item">
+
+                    <img class="content" src="pics/rock_white.png" />
+                    <div class="caption">紫 频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/rock_gray.png" />
+                    <div class="caption">灰 频道</div>
+                </div>
+
+
+                <div class="item">
+                    <img class="content" src="pics/rock_black.png" />
+                    <div class="caption">红 频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/rock_red.png" />
+                    <div class="caption">蓝 频道</div>
+                </div>
+                <div class="item">
+
+                    <img class="content" src="pics/rock_bomb.png" />
+                    <div class="caption">核弹 频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/rock_china.png" />
+                    <div class="caption">中国 频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/jiushirang.png" />
+                    <div class="caption">久石让频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/the_voice.png" />
+                    <div class="caption">中国好声音</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/xiaoyuanminyao.png" />
+                    <div class="caption">校园民谣频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/xinge.png" />
+                    <div class="caption">新歌主打频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/qingge.png" />
+                    <div class="caption">一句情歌频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/xiaoqingxin.png" />
+                    <div class="caption">小清新频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/dongman.png" />
+                    <div class="caption">动漫频道</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/coder.png" />
+                    <div class="caption">程序猿之声</div>
+                </div>
+                <div class="item">
+                    <img class="content" src="pics/piano.png" />
+                    <div class="caption">钢琴雕刻时光</div>
+                </div>
+
+            </div>
+
+            <div class="globalCaption"></div>
+
+            <div class="scrollbar">
+                <div class="slider">
+                    <div class="position"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <center><div id="player"></div></center>
+    <audio  autoplay >
+        <source src="sound/start.mp3" />
+    </audio>
+    <ul id="extra_menu">
+
+        <li>
+            <button id="change_songs">换歌曲</button></li>
+        <li>
+            <button id="change_channel">换频道</button></li>
+    </ul>
+
+    <!--<div id="createAppBar" data-win-control="WinJS.UI.AppBar" data-win-options="">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdAdd',label:'Add',icon:'normal',section:'global',tooltip:'Add item'}">
+        </button>
+        <hr data-win-control="WinJS.UI.AppBarCommand" data-win-options="{type:'separator',section:'global'}" />
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdDelete',label:'Delete',icon:'exit',section:'global',tooltip:'Delete item'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdCamera',label:'Camera',icon:'more',section:'selection',tooltip:'Take a picture'}">
+        </button>
+    </div>-->
+    <script src="/js/default.js"></script>
+</body>
+
+</html>

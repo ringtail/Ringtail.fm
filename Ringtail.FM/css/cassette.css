@@ -1,0 +1,95 @@
+﻿#cassette{
+	margin:80px auto;
+	width:500px;
+	height:400px;
+	background-image: url(../img/cassette_bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+#wheel_left{
+	float:left;
+	width:100px;
+	height:100px;
+	background-image:url(../img/wheel_left.png);
+	background-size:contain;
+	margin-top:85px;
+	margin-left:110px;
+	display:inline-block;
+}
+
+#wheel_right{
+	float:right;
+	width:215px;
+	height:215px;
+	background-image:url(../img/wheel_right.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	margin-right: 55px;
+	margin-top:25px;
+}
+#cassette_appearance{
+	z-index:10;
+	width:500px;
+	height:308px;
+	background-image: url(../img/cassette_appearance.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	display:inline-block;
+	margin-top:-250px;
+	margin-left:28px;
+}
+
+
+@-ms-keyframes rotateLeft {
+	0% { -ms-transform: rotate(0deg) translateZ(-1px); }
+	100% { -ms-transform: rotate(-360deg) translateZ(-1px); }
+}
+@-ms-keyframes update {
+	0% { -ms-transform: rotate(0deg) translateZ(-1px); }
+	100% { -ms-transform: rotate(-1deg) translateZ(-1px); }
+}
+@-ms-keyframes rotateRight {
+	0% { -ms-transform: rotate(0deg) translateZ(-1px); }
+	100% { -ms-transform: rotate(360deg) translateZ(-1px); }
+}
+@keyframes rotateLeft {
+	0% { transform: rotate(0deg) translateZ(-1px); }
+	100% { transform: rotate(-360deg) translateZ(-1px); }
+}
+@keyframes update {
+	0% { transform: rotate(0deg) translateZ(-1px); }
+	100% { transform: rotate(-1g) translateZ(-1px); }
+}
+@keyframes rotateRight {
+	0% { transform: rotate(0deg) translateZ(-1px); }
+	100% { transform: rotate(360deg) translateZ(-1px); }
+}
+.wheel{
+	
+	
+}
+#cassette_appearance{
+	
+}
+
+.wheel_left_active{
+	-ms-animation:rotateLeft 2s linear infinite forwards;
+
+}
+.wheel_right_active{
+	-ms-animation:rotateRight 2s linear infinite forwards;
+
+}
+.whell_inactive{
+	-ms-animation:none;
+
+}
+.cassette_appearance_active{
+	
+	-ms-animation:update 10000000s linear infinite forwards;
+}
+.cassette_appearance_inactive{
+
+	-ms-animation:none;
+}

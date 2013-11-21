@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="36827-.Ringtail.FM" Version="3.0.1.1" Publisher="CN=7BE5EB3D-76B6-4CC0-8BCC-ED643556B29D" />
+  <Properties>
+    <DisplayName>Ringtail.FM</DisplayName>
+    <PublisherDisplayName>博彦之星-学生公用</PublisherDisplayName>
+    <Logo>images\icon(50-50).png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Ringtail.FM" Logo="images\icon(150-150).png" SmallLogo="images\icon(30-30).png" Description="Ringtail.FM" ForegroundText="light" BackgroundColor="#E00A00" ToastCapable="false">
+        <DefaultTile ShowName="logoOnly" />
+        <SplashScreen Image="images\ICON(620-300).png" BackgroundColor="#E00A00" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="default.html">
+          <BackgroundTasks>
+            <Task Type="audio" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

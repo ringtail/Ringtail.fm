@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>80d536bc-f39a-47d0-a62a-ba8291eaa423</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <PackageCertificateKeyFile>Ringtail.FM_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>C:\Users\ringtail\Desktop\ringtail_music\</AppxPackageDir>
+    <PackageCertificateThumbprint>B52A8439492914C5A357D881DC62B5F7E866E6E8</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\cassette.css" />
+    <Content Include="css\mspeakker.css" />
+    <Content Include="css\style.css" />
+    <Content Include="default.html" />
+    <Content Include="images\icon%28150-150%29.png" />
+    <Content Include="images\icon%2824-24%29.png" />
+    <Content Include="images\icon%2830-30%29.png" />
+    <Content Include="images\icon%28310%29.png" />
+    <Content Include="images\icon%2850-50%29.png" />
+    <Content Include="images\ICON%28620-300%29.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splash-sdk.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="img\album-cover.png" />
+    <Content Include="img\bg_1.jpg" />
+    <Content Include="img\bg_2.jpg" />
+    <Content Include="img\bg_3.jpg" />
+    <Content Include="img\bg_4.jpg" />
+    <Content Include="img\bg_5.jpg" />
+    <Content Include="img\buffering.gif" />
+    <Content Include="img\cassette_appearance.png" />
+    <Content Include="img\cassette_appearance_blue.png" />
+    <Content Include="img\cassette_bg.png" />
+    <Content Include="img\coder.png" />
+    <Content Include="img\dark\sk-controlbg.png" />
+    <Content Include="img\dark\sk-dark.png" />
+    <Content Include="img\dark\sk-leftblock.png" />
+    <Content Include="img\dark\sk-middleblock.png" />
+    <Content Include="img\dark\sk-rightblock.png" />
+    <Content Include="img\light\sk-controlbg.png" />
+    <Content Include="img\light\sk-leftblock.png" />
+    <Content Include="img\light\sk-light.png" />
+    <Content Include="img\light\sk-middleblock.png" />
+    <Content Include="img\light\sk-rightblock.png" />
+    <Content Include="img\ms-album-cover.png" />
+    <Content Include="img\ms-label.png" />
+    <Content Include="img\sk-copyright.png" />
+    <Content Include="img\sk-edit.png" />
+    <Content Include="img\sk-heart.png" />
+    <Content Include="img\sk-label.png" />
+    <Content Include="img\sk-lastfm.png" />
+    <Content Include="img\sk-nocover.png" />
+    <Content Include="img\speakker-dark.png" />
+    <Content Include="img\speakker-light.png" />
+    <Content Include="img\speakker.ico" />
+    <Content Include="img\speakker.png" />
+    <Content Include="img\wheel_left.png" />
+    <Content Include="img\wheel_right.png" />
+    <Content Include="js\coverflow\contentflow.css" />
+    <Content Include="js\coverflow\contentflow_src.js" />
+    <Content Include="js\coverflow\img\.blank.gif.swp" />
+    <Content Include="js\coverflow\img\1x1_0.5_black.png" />
+    <Content Include="js\coverflow\img\blank.gif" />
+    <Content Include="js\coverflow\img\loader.gif" />
+    <Content Include="js\coverflow\img\scrollbar_white.png" />
+    <Content Include="js\coverflow\img\slider_white.png" />
+    <Content Include="js\data.js" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\jquery-css-transform\jquery-css-transform.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\rotate3Di.js" />
+    <Content Include="js\speakker.min.js" />
+    <Content Include="js\temp.js" />
+    <Content Include="js\win8-jquery.js" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="pics\70.png" />
+    <Content Include="pics\80.png" />
+    <Content Include="pics\90.png" />
+    <Content Include="pics\coder.png" />
+    <Content Include="pics\dianzi.png" />
+    <Content Include="pics\dongman.png" />
+    <Content Include="pics\european.png" />
+    <Content Include="pics\france.png" />
+    <Content Include="pics\huayu.png" />
+    <Content Include="pics\jazz.png" />
+    <Content Include="pics\jiushirang.png" />
+    <Content Include="pics\minyao.png" />
+    <Content Include="pics\piano.png" />
+    <Content Include="pics\pic0.png" />
+    <Content Include="pics\pic1.png" />
+    <Content Include="pics\pic2.png" />
+    <Content Include="pics\pic4.png" />
+    <Content Include="pics\psy.png" />
+    <Content Include="pics\qingge.png" />
+    <Content Include="pics\qingyinyue.png" />
+    <Content Include="pics\r&amp;b.png" />
+    <Content Include="pics\riyu.jpg" />
+    <Content Include="pics\rock.psd" />
+    <Content Include="pics\rock_black.png" />
+    <Content Include="pics\rock_black.psd" />
+    <Content Include="pics\rock_blue.png" />
+    <Content Include="pics\rock_blue.psd" />
+    <Content Include="pics\rock_bomb.png" />
+    <Content Include="pics\rock_china.png" />
+    <Content Include="pics\rock_gray.png" />
+    <Content Include="pics\rock_gray.psd" />
+    <Content Include="pics\rock_head.psd" />
+    <Content Include="pics\rock_red.png" />
+    <Content Include="pics\rock_red.psd" />
+    <Content Include="pics\rock_title.psd" />
+    <Content Include="pics\rock_white.png" />
+    <Content Include="pics\rock_white.psd" />
+    <Content Include="pics\shuochang.png" />
+    <Content Include="pics\the_voice.png" />
+    <Content Include="pics\warning_connection.png" />
+    <Content Include="pics\warning_server.png" />
+    <Content Include="pics\warning_unknow.png" />
+    <Content Include="pics\xiaoqingxin.png" />
+    <Content Include="pics\xiaoyuanminyao.png" />
+    <Content Include="pics\xinge.png" />
+    <Content Include="pics\yuansheng.png" />
+    <None Include="Ringtail.FM_StoreKey.pfx" />
+    <Content Include="sound\start.mp3" />
+    <None Include="Ringtail.FM_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
